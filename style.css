@@ -1,0 +1,33 @@
+#fuzzy-windows {
+    background: #2D2D2D;
+    border: 10px solid #2D2D2D;
+    border-radius: 10px;
+}
+
+GtkTreeView {
+    font-size:12px;
+    color: #FFFFFF;
+    background: #4C4C4C;
+    -GtkTreeView-vertical-separator: 4;
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 0;
+}
+
+GtkTreeView.dnd {
+    border-radius: 3px;
+}
+
+GtkTreeView:selected:focus {
+    background: #2D2D2D;
+}
+
+GtkTreeView .entry {
+    border-color: @theme_fg_color;
+    border-width: 10px;
+    
+}
+
+GtkTreeView row:nth-child(even),
+GtkTreeView row:nth-child(odd) {
+    background-color: @theme_base_color;
+}
