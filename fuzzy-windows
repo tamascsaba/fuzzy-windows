@@ -14,8 +14,9 @@ except ImportError:
 import os
 import signal
 
+# Style
 style_provider = Gtk.CssProvider()
-css = open('./style.css', 'rb') # rb needed for python 3 support
+css = open('./style.css', 'rb')
 css_data = css.read()
 css.close()
 
